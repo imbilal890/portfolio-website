@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:linear-gradient(135deg,#0f172a,#1e293b,#1e40af);
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:800px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:40px;
+            box-shadow:0 10px 30px rgba(0,0,0,.3);
+        }
+
+        h1{
+            text-align:center;
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#cbd5e1;
+            margin-bottom:30px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+        }
+
+        label{
+            font-weight:500;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:14px;
+            border:none;
+            outline:none;
+            border-radius:10px;
+            background:rgba(255,255,255,0.1);
+            color:white;
+            font-size:15px;
+        }
+
+        input::placeholder,
+        textarea::placeholder{
+            color:#cbd5e1;
+        }
+
+        textarea{
+            min-height:150px;
+            resize:none;
+        }
+
+        button{
+            background:#38bdf8;
+            color:#0f172a;
+            border:none;
+            padding:14px;
+            border-radius:10px;
+            font-size:16px;
+            font-weight:600;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            transform:translateY(-3px);
+            box-shadow:0 10px 25px rgba(56,189,248,.4);
+        }
+
+        .contact-info{
+            margin-top:35px;
+            text-align:center;
+            border-top:1px solid rgba(255,255,255,.1);
+            padding-top:25px;
+        }
+
+        .contact-info p{
+            margin:10px 0;
+            color:#cbd5e1;
+        }
+
+        .socials{
+            margin-top:20px;
+        }
+
+        .socials a{
+            text-decoration:none;
+            color:white;
+            margin:0 10px;
+            padding:10px 18px;
+            background:rgba(255,255,255,.08);
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .socials a:hover{
+            background:#38bdf8;
+            color:#0f172a;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:30px;
+            color:#94a3b8;
+        }
+
+        @media(max-width:768px){
+            .container{
+                padding:25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Contact Me</h1>
+
+        <p class="subtitle">
+            Have a project or opportunity? Feel free to reach out.
+        </p>
+
+        <form action="https://formsubmit.co/imbilal180@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea name="message"
+                placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <div class="contact-info">
+
+            <p>📧 Email: imbilal180@gmail.com</p>
+
+            <div class="socials">
+                <a href="https://github.com/imbilal890">GitHub</a>
+                <a href="https://www.linkedin.com/in/muhammad-bilal-memon-10348638b ">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2025 Muhammad Bilal Memon | All Rights Reserved
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
