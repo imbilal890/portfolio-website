@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Bilal Memon | Portfolio</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
@@ -18,165 +17,165 @@
         }
 
         body {
-            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1e40af);
-            background-size: 400% 400%;
-            animation: gradientMove 12s ease infinite;
+            background-color: #0f172a;
             color: white;
             min-height: 100vh;
         }
 
-        @keyframes gradientMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
         header {
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px 20px;
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             color: #38bdf8;
+            letter-spacing: 1px;
         }
 
         header p {
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            margin-top: 10px;
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-top: 8px;
         }
 
         nav {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 40px;
+            gap: 12px;
+            padding: 20px;
         }
 
         nav a {
             text-decoration: none;
             color: white;
-            background: rgba(37, 99, 235, 0.8);
-            padding: 12px 25px;
-            border-radius: 30px;
-            transition: .3s;
+            background: #1e40af;
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: 0.3s;
         }
 
         nav a:hover {
             background: #38bdf8;
             color: #0f172a;
-            transform: translateY(-4px);
         }
 
         .hero {
             width: 90%;
-            max-width: 1100px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(15px);
-            border-radius: 25px;
-            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 40px 30px;
             text-align: center;
+            border: 1px solid #334155;
         }
 
         .profile-pic {
-            width: 220px;
-            height: 220px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #38bdf8;
-            margin-bottom: 25px;
+            border: 1px ;
+            margin-bottom: 20px;
         }
 
         .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #f1f5f9;
         }
 
         .hero p {
-            color: #dbeafe;
+            color: #94a3b8;
             line-height: 1.8;
-            max-width: 800px;
-            margin: auto;
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 0.95rem;
         }
 
         .btn {
             display: inline-block;
             margin-top: 25px;
-            padding: 12px 30px;
+            padding: 12px 28px;
             background: #38bdf8;
             color: #0f172a;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 25px;
             font-weight: 600;
+            font-size: 0.95rem;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
+            background: #7dd3fc;
         }
 
-        section {
+        .section {
             width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(15px);
-            border-radius: 25px;
-            padding: 35px;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid #334155;
         }
 
-        section h2 {
+        .section h2 {
             text-align: center;
             color: #38bdf8;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
         }
 
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #38bdf8;
+            margin: 0 auto 20px;
+            border-radius: 3px;
+        }
 
-        .skills-container {
+        .skills-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 12px;
         }
 
         .skill-card {
-            background: rgba(56, 189, 248, 0.15);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            padding: 15px 25px;
-            border-radius: 15px;
-            transition: .3s;
+            background: #0f172a;
+            border: 1px solid #38bdf8;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #bfdbfe;
+            transition: 0.3s;
         }
 
         .skill-card:hover {
-            transform: translateY(-5px);
-            background: rgba(56, 189, 248, 0.3);
+            background: #1e40af;
         }
 
-        
         footer {
             text-align: center;
-            padding: 30px;
-            color: #cbd5e1;
+            padding: 25px;
+            color: #475569;
+            font-size: 0.85rem;
+            margin-top: 20px;
         }
 
-        @media(max-width:768px) {
+        /* Responsive */
+        @media (max-width: 600px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .profile-pic {
-                width: 170px;
-                height: 170px;
+                width: 120px;
+                height: 120px;
             }
         }
     </style>
@@ -186,7 +185,7 @@
 
     <header>
         <h1>Muhammad Bilal Memon</h1>
-        <p>Front-End Developer | Software Engineering Student</p>
+        <p>Front-End Developer &nbsp;|&nbsp; Software Engineering Student</p>
     </header>
 
     <nav>
@@ -197,28 +196,23 @@
     </nav>
 
     <main class="hero">
-
-        <img src="stylish-man-flat-vector-profile-picture-ai-generated_606187-349.avif"
-            alt="Muhammad Bilal Memon" class="profile-pic">
+        <img src="stylish-man-flat-vector-profile-picture-ai-generated_606187-349.avif" alt="Muhammad Bilal Memon"
+            class="profile-pic">
 
         <h2>Hello, I'm Bilal 👋</h2>
-
         <p>
-            I am a passionate Front-End Developer and Software Engineering
-            student focused on building modern, responsive, and user-friendly
-            web applications. I enjoy transforming creative ideas into elegant
-            digital experiences while continuously learning new technologies.
+            I'm a passionate Front-End Developer and Software Engineering student
+            focused on building modern, responsive, and user-friendly web applications.
+            I enjoy transforming creative ideas into elegant digital experiences while
+            continuously learning new technologies.
         </p>
-
         <a href="contact.html" class="btn">Hire Me</a>
-
     </main>
 
-
-    <section>
+    <section class="section">
         <h2>Technical Skills</h2>
-
-        <div class="skills-container">
+        <div class="divider"></div>
+        <div class="skills-grid">
             <div class="skill-card">HTML5</div>
             <div class="skill-card">CSS3</div>
             <div class="skill-card">JavaScript</div>
@@ -230,7 +224,6 @@
         </div>
     </section>
 
-   
     <footer>
         <p>© 2025 Muhammad Bilal Memon | All Rights Reserved</p>
     </footer>

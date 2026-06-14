@@ -1,195 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Poppins',sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        body{
-            min-height:100vh;
-            background:linear-gradient(135deg,#0f172a,#1e293b,#1e40af);
-            color:white;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:20px;
+        body {
+            min-height: 100vh;
+            background-color: #0a0f1e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
         }
 
-        .container{
-            width:100%;
-            max-width:800px;
-            background:rgba(255,255,255,0.08);
-            backdrop-filter:blur(15px);
-            border:1px solid rgba(255,255,255,0.1);
-            border-radius:20px;
-            padding:40px;
-            box-shadow:0 10px 30px rgba(0,0,0,.3);
+        .container {
+            width: 100%;
+            max-width: 750px;
+            background: #0d1426;
+            border: 1px solid #1e2d4a;
+            border-radius: 20px;
+            padding: 40px;
         }
 
-        h1{
-            text-align:center;
-            color:#38bdf8;
-            margin-bottom:10px;
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
         }
 
-        .subtitle{
-            text-align:center;
-            color:#cbd5e1;
-            margin-bottom:30px;
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
         }
 
-        form{
-            display:flex;
-            flex-direction:column;
-            gap:18px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
 
-        label{
-            font-weight:500;
+        label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #94a3b8;
+            display: block;
+            margin-bottom: 6px;
         }
 
-        input,
-        textarea{
-            width:100%;
-            padding:14px;
-            border:none;
-            outline:none;
-            border-radius:10px;
-            background:rgba(255,255,255,0.1);
-            color:white;
-            font-size:15px;
+        input, textarea {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1px solid #1e2d4a;
+            border-radius: 10px;
+            background: #0a0f1e;
+            color: white;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
         }
 
-        input::placeholder,
-        textarea::placeholder{
-            color:#cbd5e1;
+        input:focus, textarea:focus {
+            border-color: #38bdf8;
         }
 
-        textarea{
-            min-height:150px;
-            resize:none;
+        input::placeholder, textarea::placeholder {
+            color: #334155;
         }
 
-        button{
-            background:#38bdf8;
-            color:#0f172a;
-            border:none;
-            padding:14px;
-            border-radius:10px;
-            font-size:16px;
-            font-weight:600;
-            cursor:pointer;
-            transition:.3s;
+        textarea {
+            min-height: 140px;
+            resize: none;
         }
 
-        button:hover{
-            transform:translateY(-3px);
-            box-shadow:0 10px 25px rgba(56,189,248,.4);
+        button {
+            background: #38bdf8;
+            color: #0a0f1e;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
         }
 
-        .contact-info{
-            margin-top:35px;
-            text-align:center;
-            border-top:1px solid rgba(255,255,255,.1);
-            padding-top:25px;
+        button:hover {
+            background: #7dd3fc;
         }
 
-        .contact-info p{
-            margin:10px 0;
-            color:#cbd5e1;
+        .divider {
+            border: none;
+            border-top: 1px solid #1e2d4a;
+            margin: 28px 0;
         }
 
-        .socials{
-            margin-top:20px;
+        .info-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            color: #64748b;
+            font-size: 0.88rem;
+            margin-bottom: 20px;
         }
 
-        .socials a{
-            text-decoration:none;
-            color:white;
-            margin:0 10px;
-            padding:10px 18px;
-            background:rgba(255,255,255,.08);
-            border-radius:30px;
-            transition:.3s;
+        .info-row a {
+            color: #38bdf8;
+            text-decoration: none;
         }
 
-        .socials a:hover{
-            background:#38bdf8;
-            color:#0f172a;
+        .info-row a:hover {
+            text-decoration: underline;
         }
 
-        footer{
-            text-align:center;
-            margin-top:30px;
-            color:#94a3b8;
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
         }
 
-        @media(max-width:768px){
-            .container{
-                padding:25px;
-            }
+        .socials a {
+            text-decoration: none;
+            color: #94a3b8;
+            padding: 10px 22px;
+            background: #0a0f1e;
+            border: 1px solid #1e2d4a;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .socials a:hover {
+            border-color: #38bdf8;
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #334155;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            .socials { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
-
 <body>
 
     <div class="container">
-
         <h1>Contact Me</h1>
-
-        <p class="subtitle">
-            Have a project or opportunity? Feel free to reach out.
-        </p>
+        <p class="subtitle">Have a project or opportunity? Feel free to reach out.</p>
 
         <form action="https://formsubmit.co/imbilal180@gmail.com" method="POST">
-
             <input type="hidden" name="_captcha" value="false">
 
-            <label>Full Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required>
-
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="Enter your email" required>
-
-            <label>Message</label>
-            <textarea name="message"
-                placeholder="Write your message here..." required></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-        <div class="contact-info">
-
-            <p>📧 Email: imbilal180@gmail.com</p>
-
-            <div class="socials">
-                <a href="https://github.com/imbilal890">GitHub</a>
-                <a href="https://www.linkedin.com/in/muhammad-bilal-memon-10348638b ">LinkedIn</a>
+            <div>
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
             </div>
 
+            <div>
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label>Message</label>
+                <textarea name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <hr class="divider">
+
+        <div class="info-row">
+            📧 <a href="mailto:imbilal180@gmail.com">imbilal180@gmail.com</a>
         </div>
 
-        <footer>
-            © 2025 Muhammad Bilal Memon | All Rights Reserved
-        </footer>
-
+        <div class="socials">
+            <a href="https://github.com/imbilal890" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/muhammad-bilal-memon-10348638b" target="_blank">LinkedIn</a>
+        </div>
     </div>
 
+    <footer>
+        <p>© 2025 Muhammad Bilal Memon | All Rights Reserved</p>
+    </footer>
+
 </body>
-
 </html>
-

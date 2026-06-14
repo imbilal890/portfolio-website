@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <style>
         * {
             margin: 0;
@@ -19,66 +17,82 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(135deg, #0f172a, #1e293b, #1e40af);
+            background-color: #0a0f1e;
             color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .container {
             width: 100%;
             max-width: 1000px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #0d1426;
+            border: 1px solid #1e2d4a;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
             text-align: center;
             color: #38bdf8;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
         }
 
         .subtitle {
             text-align: center;
-            color: #cbd5e1;
+            color: #64748b;
             margin-bottom: 30px;
+            font-size: 0.9rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            overflow: hidden;
             border-radius: 12px;
+            overflow: hidden;
         }
 
         th {
             background: #38bdf8;
-            color: #0f172a;
-            padding: 18px;
+            color: #0a0f1e;
+            padding: 16px 20px;
             font-weight: 600;
+            font-size: 0.9rem;
         }
 
         td {
-            padding: 18px;
+            padding: 16px 20px;
             text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: #0d1426;
+            border-bottom: 1px solid #1e2d4a;
+            font-size: 0.88rem;
+            color: #94a3b8;
+        }
+
+        td:last-child {
+            white-space: nowrap;
+            width: 120px;
         }
 
         tr:hover td {
-            background: rgba(56, 189, 248, 0.15);
+            background: #0d1a2e;
             transition: 0.3s;
         }
 
         .degree {
-            color: #38bdf8;
+            color: #f1f5f9;
             font-weight: 500;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #334155;
+            font-size: 0.8rem;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
@@ -134,10 +148,7 @@
 
     <div class="container">
         <h1>Education</h1>
-
-        <p class="subtitle">
-            My academic journey and educational background.
-        </p>
+        <p class="subtitle">My academic journey and educational background.</p>
 
         <table>
             <thead>
@@ -147,30 +158,34 @@
                     <th>Year</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
                     <td class="degree">BS Software Engineering</td>
                     <td>Mohammad Ali Jinnah University</td>
                     <td>Ongoing</td>
                 </tr>
-
+                <tr>
+                    <td class="degree">Diploma in Front-End Web Development</td>
+                    <td>Aptech Karachi, Pakistan</td>
+                    <td> 2025 – 2026 </td>
+                </tr>
                 <tr>
                     <td class="degree">Intermediate</td>
-                    <td>Board of Intermediate Education Karachi</td>
-                    <td>2023 – 2025</td>
+                    <td>Board of Intermediate & Secondary Education, Hyderabad — Sindh</td>
+                    <td> 2024 – 2025 </td>
                 </tr>
-
                 <tr>
-                    <td class="degree">Secondary Education</td>
-                    <td>Board of Secondary Education Karachi</td>
-                    <td>2020 – 2022</td>
+                    <td class="degree">Secondary Education (Matriculation)</td>
+                    <td>Board of Secondary Education, Karachi</td>
+                    <td> 2021 – 2022 </td>
                 </tr>
             </tbody>
         </table>
-
     </div>
+
+    <footer>
+        <p>© 2025 Muhammad Bilal Memon | All Rights Reserved</p>
+    </footer>
 
 </body>
 
-</html>

@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -19,126 +15,105 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(135deg, #0f172a, #1e293b, #1e40af);
+            background-color: #0a0f1e;
             color: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .container {
             width: 100%;
             max-width: 1000px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #0d1426;
+            border: 1px solid #1e2d4a;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
             text-align: center;
             color: #38bdf8;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
         }
 
         .subtitle {
             text-align: center;
-            color: #cbd5e1;
+            color: #64748b;
             margin-bottom: 30px;
+            font-size: 0.9rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            overflow: hidden;
             border-radius: 12px;
+            overflow: hidden;
         }
 
         th {
             background: #38bdf8;
-            color: #0f172a;
-            padding: 18px;
+            color: #0a0f1e;
+            padding: 16px 20px;
             font-weight: 600;
+            font-size: 0.9rem;
         }
 
         td {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 18px;
+            padding: 16px 20px;
             text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: #0d1426;
+            border-bottom: 1px solid #1e2d4a;
+            font-size: 0.88rem;
+            color: #94a3b8;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
         }
 
         tr:hover td {
-            background: rgba(56, 189, 248, 0.15);
+            background: #0d1a2e;
             transition: 0.3s;
         }
 
         .role {
-            color: #38bdf8;
+            color: #f1f5f9;
             font-weight: 500;
         }
 
+        td:last-child {
+            white-space: nowrap;
+            width: 120px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #334155;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
-
-            table,
-            thead,
-            tbody,
-            th,
-            td,
-            tr {
-                display: block;
-            }
-
-            thead {
-                display: none;
-            }
-
-            tr {
-                margin-bottom: 20px;
-                background: rgba(255, 255, 255, 0.05);
-                border-radius: 12px;
-                overflow: hidden;
-            }
-
-            td {
-                text-align: right;
-                padding-left: 50%;
-                position: relative;
-            }
-
-            td::before {
-                position: absolute;
-                left: 15px;
-                font-weight: 600;
-                color: #38bdf8;
-            }
-
-            td:nth-child(1)::before {
-                content: "Company";
-            }
-
-            td:nth-child(2)::before {
-                content: "Role";
-            }
-
-            td:nth-child(3)::before {
-                content: "Duration";
-            }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tr { margin-bottom: 20px; border-radius: 12px; overflow: hidden; }
+            td { text-align: right; padding-left: 50%; position: relative; }
+            td::before { position: absolute; left: 15px; font-weight: 600; color: #38bdf8; }
+            td:nth-child(1)::before { content: "Company"; }
+            td:nth-child(2)::before { content: "Role"; }
+            td:nth-child(3)::before { content: "Duration"; }
         }
     </style>
 </head>
-
 <body>
 
     <div class="container">
         <h1>Work Experience</h1>
-
-        <p class="subtitle">
-            My professional journey and career experience.
-        </p>
+        <p class="subtitle">My professional journey and career experience.</p>
 
         <table>
             <thead>
@@ -148,14 +123,7 @@
                     <th>Duration</th>
                 </tr>
             </thead>
-
             <tbody>
-                <tr>
-                    <td>THE SALES BANK</td>
-                    <td class="role">Sales Representative</td>
-                    <td>2022 – 2025</td>
-                </tr>
-
                 <tr>
                     <td>Freelancer</td>
                     <td class="role">Web Developer</td>
@@ -165,7 +133,13 @@
         </table>
     </div>
 
-</body>
+    <footer>
+        <p>© 2025 Muhammad Bilal Memon | All Rights Reserved</p>
+        </footer>
 
+</body>
 </html>
+
+
+
 
